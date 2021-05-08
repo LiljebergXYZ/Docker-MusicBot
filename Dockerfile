@@ -2,7 +2,7 @@ FROM ringcentral/jdk:8
 
 RUN mkdir -p /usr/src/musicbot \
 	&& curl https://api.github.com/repos/jagrosh/MusicBot/releases/latest \
-	| grep "browser_download_url.*-Linux.jar" \
+	| grep "browser_download_url" \
 	| cut -d '"' -f 4 \
 	| xargs wget -qO /usr/src/musicbot/musicbot.jar 
 
