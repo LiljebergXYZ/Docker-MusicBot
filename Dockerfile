@@ -1,6 +1,6 @@
 FROM ringcentral/jdk:8
 
-RUN apk add libstdc++6
+RUN apk add libstdc++
 
 RUN mkdir -p /usr/src/musicbot \
 	&& curl https://api.github.com/repos/jagrosh/MusicBot/releases/latest \
