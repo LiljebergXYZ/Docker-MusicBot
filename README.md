@@ -14,3 +14,4 @@ Or build and run it yourself
 docker build . -t musicbot
 docker run -d --name musicbot -v $(pwd)/config:/usr/src/musicbot/config musicbot
 ```
+
