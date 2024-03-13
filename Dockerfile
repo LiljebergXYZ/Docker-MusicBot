@@ -1,4 +1,4 @@
-FROM ringcentral/jdk:8
+FROM ringcentral/jdk:11
 
 RUN apk add libstdc++
 
