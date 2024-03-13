@@ -11,4 +11,3 @@ RUN mkdir -p /usr/src/musicbot \
 WORKDIR /usr/src/musicbot
 
 CMD ["java", "-Dnogui=true", "-Dconfig.file=/usr/src/musicbot/config/config.txt", "-jar", "musicbot.jar"]
-
